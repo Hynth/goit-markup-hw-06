@@ -27,18 +27,14 @@
       <nav class="container-nav">
         <a class="header-title" href="#">WebStudio</a>
         <ul class="list container-list-nav">
-          <li>
-            <a class="header-navigation page link" href="./index.html"
-              >Estudio</a
-            >
+          <li class="header-navigation">
+            <a class="page link" href="./index.html">Estudio</a>
           </li>
-          <li>
-            <a class="header-navigation link" href="./portfolio.html"
-              >Portafolio</a
-            >
+          <li class="header-navigation">
+            <a class="link" href="./portfolio.html">Portafolio</a>
           </li>
-          <li>
-            <a class="header-navigation link" href="#">Contactos</a>
+          <li class="header-navigation">
+            <a class="link" href="#">Contactos</a>
           </li>
         </ul>
       </nav>
@@ -75,6 +71,79 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="icon-close pointer" data-modal-close>&times;</button>
+          <div class="container-modal">
+            <p class="modal-title">
+              Deje sus datos, nos contactaremos con usted
+            </p>
+            <form class="modal-form" name="subscription-info" autocomplete="on">
+              <label for="name" class="modal-label">Nombre</label>
+              <div class="modal-input-icon">
+                <input
+                  type="text"
+                  name="username"
+                  id="name"
+                  class="modal-input"
+                  required
+                />
+                <svg class="icon icon-modal-user">
+                  <use xlink:href="./images/icons.svg#icon-user"></use>
+                </svg>
+              </div>
+              <label for="phone" class="modal-label">Teléfono</label>
+              <div class="modal-input-icon">
+                <input
+                  type="tel"
+                  name="userphone"
+                  id="phone"
+                  class="modal-input"
+                  required
+                />
+                <svg class="icon icon-modal-user">
+                  <use xlink:href="./images/icons.svg#icon-tel"></use>
+                </svg>
+              </div>
+              <label for="email" class="modal-label">E-mail</label>
+              <div class="modal-input-icon">
+                <input
+                  type="email"
+                  name="useremail"
+                  id="email"
+                  class="modal-input"
+                  required
+                />
+                <svg class="icon icon-modal-user">
+                  <use xlink:href="./images/icons.svg#icon-mail"></use>
+                </svg>
+              </div>
+              <label for="feedback" class="modal-label">Comentarios</label>
+              <textarea
+                name="feedback"
+                rows="5"
+                id="feedback"
+                class="modal-textarea"
+                placeholder="Introduzca el texto"
+              ></textarea>
+              <div class="modal-checkbox">
+                <input
+                  type="checkbox"
+                  name="agreement"
+                  id="agreement"
+                  value="agreement"
+                  class="modal-check-input"
+                  required
+                />
+                <svg class="icon icon-modal-check">
+                  <use xlink:href="./images/icons.svg#icon-revisado"></use>
+                </svg>
+                <label for="agreement" class="modal-agreement"
+                  >Estoy de acuerdo con el boletín informativo y acepto los
+                  Términos y condiciones</label
+                >
+              </div>
+
+              <button type="submit" class="modal-button pointer">Enviar</button>
+            </form>
+          </div>
         </div>
       </div>
       <section class="main-middle container">
@@ -388,6 +457,29 @@
               </svg>
             </div>
           </section>
+        </section>
+        <section class="footer-element">
+          <form class="footer-form" name="subscription" autocomplete="on">
+            <label for="email" class="text-footer2"
+              >SUSCRÍBASE AL BOLETÍN INFORMATIVO</label
+            >
+            <div class="footer-form-email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Correo electrónico"
+                class="footer-input"
+                required
+              />
+              <button type="submit" class="footer-form-submit pointer">
+                Suscríbase
+                <svg class="icon icon-footer-enviar">
+                  <use xlink:href="./images/icons.svg#icon-enviar"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </section>
       </section>
     </footer>
